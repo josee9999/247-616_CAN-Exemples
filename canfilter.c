@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 	}
 
 	/// A filter matches, when <received_can_id> & mask == can_id & mask
-	struct can_filter rfilter[1]; // filtres pour 2 ID
+	struct can_filter rfilter[2]; // filtres pour 2 ID
 
 	rfilter[0].can_id   = 0x550; 
 	rfilter[0].can_mask = 0xFF0;
